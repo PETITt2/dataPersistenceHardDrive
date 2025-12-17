@@ -27,7 +27,7 @@ J'ai installé Ubuntu 24.04.3 LTS. L'installation a été effectuée à l'aide d
 ## Peuplement du disque dur
 
 Pour remplir le disque, j'ai utilisé un script qui crée des dossiers et des fichiers de différentes extensions (PDF, JPEG, TXT). Attention : les fichiers créés ne sont pas des fichiers complets — ils possèdent uniquement l'extension et un en-tête afin que les outils de forensic les traitent comme des fichiers réels.
-
+A l'interieur des fichiers se trouve des suite de mots aléatoires pris dans le dictionnaire natif de notre OS
 Le script génère un nombre de fichiers configurable directement dans le script, ainsi que les emplacements de création, eux aussi modifiables en dur.
 
 Chaque fichier a son hash MD5 associé, enregistré dans un fichier CSV contenant : la date et l'heure de création, le nom du fichier et son emplacement.
@@ -35,4 +35,5 @@ Chaque fichier a son hash MD5 associé, enregistré dans un fichier CSV contenan
 Le script se trouve à la racine du projet sous le nom : `peuplerDisqueDur.sh`
 
 ## Suppression des données
+
 
